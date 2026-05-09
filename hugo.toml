@@ -1,0 +1,67 @@
+baseURL = "http://localhost/"
+title = "Kartik Homelab"
+locale = "en-us"
+summaryLength = "10"
+theme = "hugo-clarity"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    noClasses = false
+
+[params]
+  defaultTheme = "dark"
+  description = "Homelab setup guides, cheat sheets, and troubleshooting notes"
+  mainSections = ["posts"]
+  search = true
+  code_copy_button = true
+  sidebar = "right"
+
+  [params.author]
+    name = "Kartik"
+    email = "kartik@example.com"
+
+  [params.widgets]
+    sidebar = ["toc"]
+
+[[menu.main]]
+  weight = 1
+  url = "/"
+  name = "Home"
+
+[[menu.main]]
+  weight = 2
+  url = "#"
+  name = "Categories"
+  hasChildren = true
+
+[[menu.main]]
+  name = "DNS & Networking"
+  url = "/categories/dns-networking"
+  parent = "Categories"
+
+[[menu.main]]
+  name = "Docker"
+  url = "/categories/docker"
+  parent = "Categories"
+
+[[menu.main]]
+  name = "Security"
+  url = "/categories/security"
+  parent = "Categories"
+
+[[menu.main]]
+  name = "Self-Hosted Apps"
+  url = "/categories/self-hosted"
+  parent = "Categories"
+
+[[menu.main]]
+  name = "Raspberry Pi"
+  url = "/categories/raspberry-pi"
+  parent = "Categories"
