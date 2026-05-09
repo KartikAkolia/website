@@ -33,7 +33,7 @@ hugo --minify
 
 Local dev server:
 ```bash
-hugo server -D --bind 0.0.0.0 --baseURL http://192.168.0.166:1313
+hugo server -D --bind 0.0.0.0 --baseURL http://$IP:1313
 ```
 
 ## Deployment
